@@ -36,3 +36,113 @@
     transform: rotate(360deg);
   }
 }
+
+/* KanbanBoard.css */
+.kanban-board {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.kanban-column {
+  flex: 1;
+  margin: 0 10px;
+  background-color: #e1e1e1;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  user-select: none;
+  
+  align-items: center;
+}
+
+.kanban-column h2 {
+  text-align: center;
+  background-color: #0079bf;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.kanban-card {
+  background-color: white;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.kanban-card p {
+  margin: 0 0 10px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #0079bf;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #005a8f;
+}
+
+/* EditableTitle.css */
+.editable-title {
+  padding-left: 30px;
+  position: relative;
+  text-align: left;
+}
+
+.editable-title .edit-icon {
+  top: 0;
+  right: -20px; /* 아이콘을 제목 옆에 위치시킵니다. */
+  opacity: 1; /* 초기에는 아이콘을 숨깁니다. */
+  transition: opacity 0.3s ease;
+}
+
+.editable-title .edit-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.editable-title .edit-icon {
+  opacity: 1; /* 호버 시 아이콘을 보이도록 설정합니다. */
+}
+
+.hovered {
+  /* 호버 시 제목에 대한 추가 스타일을 지정할 수 있습니다. */
+  color: blue;
+}
+
+.editable-title input[type="text"] {
+  padding-top: 10px;
+  font-size: 1.5rem; /* 입력란의 글꼴 크기를 h2와 같게 설정합니다. */
+  padding: 0.5rem; /* 입력란의 패딩을 추가합니다. */
+
+}
+
+
+.input-group {
+  padding-left: 30px;
+  display: flex; /* 수평으로 배치 */
+  align-items: center; /* 수직 가운데 정렬 */
+}
+
+.input-group input {
+  height: 30px;
+  width: 300px;
+  margin-right: 10px; 
+}
+
+.input-group button {
+  padding: 0;
+  display: block;
+  height: 35px;
+  width: 100px;
+}

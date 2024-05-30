@@ -8,6 +8,9 @@ import RegisterPage from "../pages/member/RegisterPage";
 import UserListPage from "../pages/member/UserListPage";
 import LoginPage from "../pages/member/LoginPage";
 import GuidePage from "../pages/GuidePage";
+import DragPage from "../pages/dragAndDrop/DragPage";
+import MakeDrag from "../pages/dragAndDrop/MakeDrag";
+
 
 const root = createBrowserRouter([
     // main
@@ -24,6 +27,8 @@ const root = createBrowserRouter([
     { path: '/userList', element: <UserListPage /> },
     { path: '/register', element: <RegisterPage /> },
     { path: '/login', element: <LoginPage /> },
+    { path: '/dragDrop', element: <DragPage /> },
+    { path: '/makeDrop', element: <MakeDrag /> },
     { path: "/user/logout", element: <Navigate replace to="/"/> },
 
 ]);

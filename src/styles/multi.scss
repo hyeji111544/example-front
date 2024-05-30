@@ -1,0 +1,41 @@
+.Multi {
+    .droppable-container {
+      display: flex;
+      justify-content: left;
+    }
+  
+    .droppable {
+      background: #f8f9fa;
+      padding: 20px;
+      width: 250px;
+      margin-left: 10px;
+      border: 1px solid #dee2e6;
+      border-radius: 4px;
+      min-height: 200px;
+    }
+  
+    .draggable {
+      padding: 10px;
+      margin-bottom: 10px;
+      background: #ffffff;
+      border: 1px solid #ced4da;
+      border-radius: 4px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      user-select: none;
+      display: flex;
+      align-items: center;
+    }
+  
+    .draggable.is-dragging {
+      background: #cce5ff;
+    }
+  
+    .drag-handle {
+      width: 20px;
+      height: 20px;
+      background: #6c757d;
+      margin-right: 10px;
+      cursor: grab;
+      border-radius: 3px;
+    }
+  }

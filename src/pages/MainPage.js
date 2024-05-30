@@ -30,6 +30,8 @@ const MainPage = () => {
           <Link className='list' to="/list?cate=notice">공지사항 목록</Link><br/>
           <Link className='list' to="/list?cate=free">자유게시판 목록</Link><br/>
           <Link className='list' to="/list?cate=qna">QnA 목록</Link><br/>
+          <Link className='list' to="/dragDrop">드롭</Link><br/>
+          <Link className='list' to="/makeDrop">드롭만들기</Link><br/>
           </>
         )}
         <Link className='list' to="/guide">가이드</Link><br/>
